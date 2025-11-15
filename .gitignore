@@ -61,6 +61,12 @@ logs/
 # Temporary files
 *.tmp
 *.temp
+temp_images/
+
+# Old files (можно удалить после миграции)
+words.json
+words.txt
+images/
 
 # Coverage reports
 htmlcov/

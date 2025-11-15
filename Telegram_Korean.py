@@ -431,7 +431,8 @@ async def handle_unknown_message(message: Message):
 
 async def main():
     print("Бот запущен!")
-    schedule_daily_word()
+    # Продакшн режим: отправка слова один раз в день в 9:00 утра
+    schedule_daily_word(test_mode=False, hour=9, minute=0)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
