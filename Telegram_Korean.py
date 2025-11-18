@@ -1,4 +1,5 @@
 import asyncio
+import random
 from aiogram import Dispatcher, F, Bot
 from aiogram.filters import CommandStart
 from aiogram.types import Message, KeyboardButton, ReplyKeyboardMarkup
@@ -14,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 
 import sqlite3
 
-from scheduler import schedule_daily_word
+from scheduler import schedule_daily_word, schedule_daily_quiz
 
 
 
@@ -84,13 +85,13 @@ def create_reply_menu():
         keyboard=[
             [
                 KeyboardButton(text="Проверка орфографии 🖍"),
-                KeyboardButton(text="Сгенерировать текст 📩"),
+                KeyboardButton(text="Подготовка TOPIK"),
             ],
             [
                 KeyboardButton(text="Подписаться на наш канал ✅"),
             ],
             [
-                KeyboardButton(text="Подготовка к\n TOPIK 1 🇰🇷"),
+                KeyboardButton(text="Моя статистика 📊"),
                 KeyboardButton(text="Обратная связь 🧡"),
             ],
         ],
@@ -99,12 +100,6 @@ def create_reply_menu():
 
 
 # Определяем состояния для FSM
-class TextStates(StatesGroup):
-    waiting_for_text_topic = State()
-    waiting_for_text_tone = State()
-    waiting_for_additional_details = State()
-
-
 class EssayStates(StatesGroup):
     waiting_for_essay_topic = State()
 
@@ -185,86 +180,7 @@ async def handle_request(message: Message, prompt):
     await message.answer(limit_message, reply_markup=create_reply_menu())
 
 
-# Команда "Сгенерировать текст"
-@dp.message(F.text == "Сгенерировать текст 📩")
-async def write_text(message: Message, state: FSMContext):
-    await state.set_state(TextStates.waiting_for_text_topic)
-    await message.answer(
-        "С удовольствием помогу!\n\nПожалуйста, опишите, о чем вы бы хотели написать. "
-        "Я напишу любой текст <b>на корейском языке</b> для вас.\n\n"
-        "Опишите кратко его тему (например, эссе, сообщение другу, деловое письмо и т. д.) 👇🏻",
-        reply_markup=create_reply_menu()
-    )
-
-
-# Получаем тему текста и спрашиваем о стиле текста (инлайн-кнопки)
-@dp.message(TextStates.waiting_for_text_topic)
-async def ask_text_tone(message: Message, state: FSMContext):
-    await state.update_data(text_topic=message.text)  # Исправлено на text_topic
-    await state.set_state(TextStates.waiting_for_text_tone)
-
-    # Создаем инлайн-клавиатуру с вариантами стиля текста
-    tone_keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📚 Официально-формальный", callback_data="tone_존댓말")],
-        [InlineKeyboardButton(text="💬 Неофициально-формальный", callback_data="tone_해요체")],
-        [InlineKeyboardButton(text="😊 Дружеский", callback_data="tone_반말")],
-    ])
-
-    await message.answer(
-        "В каком стиле хотели бы написать?\n\n"
-        "Выберите один из предложенных вариантов 👇🏻",
-        reply_markup=tone_keyboard
-    )
-
-
-# Обработка выбора стиля текста через инлайн-кнопки
-@dp.callback_query(F.data.startswith("tone_"))
-async def handle_text_tone(callback: CallbackQuery, state: FSMContext):  # Переименовано в handle_text_tone
-    tone_mapping = {
-        "tone_존댓말": "Официально-вежливый",
-        "tone_해요체": "Неофициально-вежливый",
-        "tone_반말": "Дружеский"
-    }
-
-    chosen_tone = tone_mapping.get(callback.data, "Неизвестный стиль")
-    await state.update_data(text_tone=chosen_tone)  # Исправлено на text_tone
-
-    await callback.message.answer(
-        f"Вы выбрали стиль письма: <b>{chosen_tone}</b>\n\n"
-        "Хотите добавить что-то особенное в текст? Например, ключевые моменты, длина текста или количество абзацев?"
-        "\n\nЕсли ничего не нужно, просто напишите 'Нет'.",
-        parse_mode="HTML"
-    )
-
-    await state.set_state(TextStates.waiting_for_additional_details)
-    await callback.answer()
-
-
-@dp.message(TextStates.waiting_for_additional_details)
-async def generate_text(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    text_topic = user_data.get("text_topic", "")
-    text_tone = user_data.get("text_tone", "")
-    additional_details = message.text if message.text.lower() != "нет" else ""
-
-    # Формируем запрос для генерации текста
-    prompt = (
-        "Ты профессиональный помощник для написания текстов. "
-        f"Напиши текст на корейском языке в стиле '{text_tone.lower()}' на тему '{text_topic}'. "
-        "Убедись, что текст звучит естественно и соответствует теме. "
-        "Если указаны дополнительные пожелания, учти их."
-    )
-
-    if additional_details:
-        prompt += f"\n\nДополнительные пожелания: {additional_details}."
-
-    await handle_request(message, prompt)
-
-    # Завершаем FSM
-    await state.clear()
-
-
-@dp.message(F.text == "Подготовка к\n TOPIK 1 🇰🇷")
+@dp.message(F.text == "Подготовка TOPIK")
 async def essay_plan(message: Message):
     subscription_keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="Отписаться", callback_data="unsubscribe_topik")],
@@ -319,6 +235,82 @@ async def resubscribe_topik(callback: CallbackQuery):
         await callback.message.answer("Произошла ошибка при подписке. Пожалуйста, попробуйте позже.")
     await callback.answer()
 
+# Обработчик ответов на квиз
+@dp.callback_query(F.data.startswith("quiz_"))
+async def handle_quiz_answer(callback: CallbackQuery):
+    # Формат callback_data: quiz_{user_id}_{correct_index}_{selected_index}_{correct_word}
+    parts = callback.data.split("_")
+    if len(parts) != 5:
+        await callback.answer("Ошибка обработки ответа")
+        return
+    
+    user_id = int(parts[1])
+    correct_index = int(parts[2])
+    selected_index = int(parts[3])
+    correct_word = parts[4]
+    
+    # Получаем original_sentence из базы данных
+    active_quiz = db.get_active_quiz(user_id)
+    if active_quiz and active_quiz['correct_word'] == correct_word:
+        original_sentence = active_quiz['original_sentence']
+    else:
+        original_sentence = ""  # Fallback если не найдено
+    
+    # Проверяем, что ответил правильный пользователь
+    if callback.from_user.id != user_id:
+        await callback.answer("Это не ваш квиз!", show_alert=True)
+        return
+    
+    # Проверяем правильность ответа
+    is_correct = (selected_index == correct_index)
+    
+    # Сохраняем статистику в базу данных
+    db.record_quiz_answer(user_id, is_correct, correct_word)
+    
+    # Удаляем активный квиз после ответа
+    db.delete_active_quiz(user_id)
+    
+    if is_correct:
+        # Правильный ответ
+        response_text = (
+            f"✅ <b>Правильно!</b>\n\n"
+            f"Ответ: <b>\"{correct_word}\"</b>\n\n"
+            f"\"{original_sentence}\"\n\n"
+            f"Отличная работа! Продолжайте в том же духе! 🚀"
+        )
+        await callback.message.edit_text(
+            response_text,
+            parse_mode="HTML"
+        )
+        await callback.answer("Верно! 🎉")
+    else:
+        # Неправильный ответ
+        # Получаем правильный вариант из кнопок
+        correct_option = callback.message.reply_markup.inline_keyboard[correct_index][0].text
+        
+        # Одобряющие фразы при неправильном ответе
+        encouraging_phrases = [
+            "Не расстраивайтесь! Продолжайте учиться! 💪",
+            "Это нормально ошибаться! Вы на правильном пути! 🌟",
+            "Каждая ошибка - это шаг к успеху! Продолжайте! 🚀",
+            "Вы стараетесь, и это главное! Не сдавайтесь! 💫",
+            "Ошибки помогают учиться! Вы молодец! ✨"
+        ]
+        encouraging_phrase = random.choice(encouraging_phrases)
+        
+        response_text = (
+            callback.message.text + 
+            f"\n\n❌ <b>Неправильно.</b>\n\n"
+            f"Правильный ответ: <b>{correct_option}</b>\n\n"
+             f"\"{original_sentence}\"\n\n"
+            f"{encouraging_phrase}"
+        )
+        await callback.message.edit_text(
+            response_text,
+            parse_mode="HTML"
+        )
+        await callback.answer("Неправильно 😔", show_alert=True)
+
 
 # Обработчики для кнопки "Обратная связь 🧡"
 @dp.message(F.text == "Обратная связь 🧡")
@@ -367,6 +359,22 @@ async def ask_admin_reply(callback: CallbackQuery, state: FSMContext):
     logging.info(f"Администратор нажал 'Ответить' для {user_id}.")
     await callback.message.answer(f"Введите ответ для пользователя `{user_name}` (id: `{user_id}`):")
     await callback.answer()
+
+# Обработчик команды "Моя статистика 📊"
+@dp.message(F.text == "Моя статистика 📊")
+async def show_stats(message: Message):
+    user_id = message.from_user.id
+    today_stats = db.get_user_stats(user_id)
+    all_time_stats = db.get_user_all_time_stats(user_id)
+    
+    stats_text = (
+        f"<b>За все время:</b>\n"
+        f"✅ Правильных: {all_time_stats['correct']}\n"
+        f"📝 Всего ответов: {all_time_stats['total']}\n"
+        f"🎯 Точность: {all_time_stats['accuracy']}%"
+    )
+    
+    await message.answer(stats_text, reply_markup=create_reply_menu(), parse_mode="HTML")
 
 @dp.message(AdminReplyState.waiting_for_reply)
 async def send_admin_reply(message: Message, state: FSMContext):
@@ -431,7 +439,19 @@ async def handle_unknown_message(message: Message):
 
 async def main():
     print("Бот запущен!")
-    schedule_daily_word()
+    # Создаем один планировщик для всех задач
+    from apscheduler.schedulers.asyncio import AsyncIOScheduler
+    scheduler = AsyncIOScheduler()
+    
+    # Планируем отправку слова дня в 9:00
+    schedule_daily_word(scheduler=scheduler, hour=9, minute=0)
+    
+    # Планируем отправку квиза в 19:00
+    schedule_daily_quiz(scheduler=scheduler, test_mode=False, hour=19, minute=0)
+    
+    # Запускаем планировщик
+    scheduler.start()
+    
     await dp.start_polling(bot)
 
 if __name__ == "__main__":

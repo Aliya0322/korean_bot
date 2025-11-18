@@ -1,0 +1,999 @@
+{
+    "quiz_questions": [
+      {
+        "word": "학교",
+        "translation": "школа",
+        "sentence": "저는 매일 ______에 가요.",
+        "original_sentence": "저는 매일 학교에 가요.",
+        "wrong_options": ["병원", "시장", "공원"]
+      },
+      {
+        "word": "물",
+        "translation": "вода",
+        "sentence": "운동 후에 ______을 마셔요.",
+        "original_sentence": "운동 후에 물을 마셔요.",
+        "wrong_options": ["우유", "커피", "주스"]
+      },
+      {
+        "word": "집",
+        "translation": "дом",
+        "sentence": "오늘 일찍 ______에 갈 거예요.",
+        "original_sentence": "오늘 일찍 집에 갈 거예요.",
+        "wrong_options": ["학교", "회사", "식당"]
+      },
+      {
+        "word": "버스",
+        "translation": "автобус",
+        "sentence": "저는 ______를 타고 출근해요.",
+        "original_sentence": "저는 버스를 타고 출근해요.",
+        "wrong_options": ["택시", "지하철", "기차"]
+      },
+      {
+        "word": "음악",
+        "translation": "музыка",
+        "sentence": "저는 한국 ______을 자주 들어요.",
+        "original_sentence": "저는 한국 음악을 자주 들어요.",
+        "wrong_options": ["영화", "책", "뉴스"]
+      },
+      {
+        "word": "전화",
+        "translation": "телефон (звонок)",
+        "sentence": "친구에게 ______를 했어요.",
+        "original_sentence": "친구에게 전화를 했어요.",
+        "wrong_options": ["문자를", "사진을", "메일을"]
+      },
+      {
+        "word": "시간",
+        "translation": "время",
+        "sentence": "지금 ______이 있어요?",
+        "original_sentence": "지금 시간이 있어요?",
+        "wrong_options": ["돈이", "약이", "힘이"]
+      },
+      {
+        "word": "날씨",
+        "translation": "погода",
+        "sentence": "오늘 ______가 아주 좋아요.",
+        "original_sentence": "오늘 날씨가 아주 좋아요.",
+        "wrong_options": ["음식", "가격", "기분"]
+      },
+      {
+        "word": "컴퓨터",
+        "translation": "компьютер",
+        "sentence": "회사에서 ______를 사용해요.",
+        "original_sentence": "회사에서 컴퓨터를 사용해요.",
+        "wrong_options": ["텔레비전", "냉장고", "세탁기"]
+      },
+      {
+        "word": "공책",
+        "translation": "тетрадь",
+        "sentence": "학생은 ______에 글을 써요.",
+        "original_sentence": "학생은 공책에 글을 써요.",
+        "wrong_options": ["컴퓨터", "창문", "가방"]
+      },
+      {
+        "word": "가방",
+        "translation": "сумка",
+        "sentence": "책을 ______에 넣었어요.",
+        "original_sentence": "책을 가방에 넣었어요.",
+        "wrong_options": ["책상", "의자", "서랍"]
+      },
+      {
+        "word": "옷",
+        "translation": "одежда",
+        "sentence": "새 ______을 샀어요.",
+        "original_sentence": "새 옷을 샀어요.",
+        "wrong_options": ["음식", "책", "컴퓨터"]
+      },
+      {
+        "word": "신발",
+        "translation": "обувь",
+        "sentence": "운동할 때 ______을 신어요.",
+        "original_sentence": "운동할 때 신발을 신어요.",
+        "wrong_options": ["모자", "장갑", "양말"]
+      },
+      {
+        "word": "고양이",
+        "translation": "кот",
+        "sentence": "우리 ______는 아주 귀여워요.",
+        "original_sentence": "우리 고양이는 아주 귀여워요.",
+        "wrong_options": ["강아지", "토끼", "새"]
+      },
+      {
+        "word": "강아지",
+        "translation": "собака",
+        "sentence": "저는 작은 ______를 키워요.",
+        "original_sentence": "저는 작은 강아지를 키워요.",
+        "wrong_options": ["말", "물고기", "거북이"]
+      },
+      {
+        "word": "의자",
+        "translation": "стул",
+        "sentence": "학생이 ______에 앉아 있어요.",
+        "original_sentence": "학생이 의자에 앉아 있어요.",
+        "wrong_options": ["책상", "문", "창문"]
+      },
+      {
+        "word": "창문",
+        "translation": "окно",
+        "sentence": "더워서 ______을 열었어요.",
+        "original_sentence": "더워서 창문을 열었어요.",
+        "wrong_options": ["문", "가방", "책"]
+      },
+      {
+        "word": "문",
+        "translation": "дверь",
+        "sentence": "나갈 때 ______을 닫아 주세요.",
+        "original_sentence": "나갈 때 문을 닫아 주세요.",
+        "wrong_options": ["창문을", "불을", "가방을"]
+      },
+      {
+        "word": "식당",
+        "translation": "ресторан",
+        "sentence": "점심을 ______에서 먹었어요.",
+        "original_sentence": "점심을 식당에서 먹었어요.",
+        "wrong_options": ["병원", "은행", "우체국"]
+      },
+      {
+        "word": "빵",
+        "translation": "хлеб",
+        "sentence": "저는 아침에 ______을 먹어요.",
+        "original_sentence": "저는 아침에 빵을 먹어요.",
+        "wrong_options": ["고기", "쌀", "과자"]
+      },
+      {
+        "word": "회사",
+        "translation": "компания",
+        "sentence": "아버지는 ______에서 일해요.",
+        "original_sentence": "아버지는 회사에서 일해요.",
+        "wrong_options": ["학교", "식당", "가게"]
+      },
+      {
+        "word": "가게",
+        "translation": "магазин",
+        "sentence": "저는 작은 ______에서 일해요.",
+        "original_sentence": "저는 작은 가게에서 일해요.",
+        "wrong_options": ["회사", "공원", "학교"]
+      },
+      {
+        "word": "영화",
+        "translation": "фильм",
+        "sentence": "주말에 친구와 ______를 봤어요.",
+        "original_sentence": "주말에 친구와 영화를 봤어요.",
+        "wrong_options": ["책을", "운동을", "요리를"]
+      },
+      {
+        "word": "공원",
+        "translation": "парк",
+        "sentence": "저녁에 ______을 산책했어요.",
+        "original_sentence": "저녁에 공원을 산책했어요.",
+        "wrong_options": ["백화점", "시장", "식당"]
+      },
+      {
+        "word": "시장",
+        "translation": "рынок",
+        "sentence": "엄마와 ______에 갔어요.",
+        "original_sentence": "엄마와 시장에 갔어요.",
+        "wrong_options": ["학교", "버스", "방"]
+      },
+      {
+        "word": "편지",
+        "translation": "письмо",
+        "sentence": "친구에게 ______를 보냈어요.",
+        "original_sentence": "친구에게 편지를 보냈어요.",
+        "wrong_options": ["상자", "지도", "사진"]
+      },
+      {
+        "word": "사진",
+        "translation": "фото",
+        "sentence": "여행에서 예쁜 ______을 찍었어요.",
+        "original_sentence": "여행에서 예쁜 사진을 찍었어요.",
+        "wrong_options": ["음악을", "책을", "노래를"]
+      },
+      {
+        "word": "방",
+        "translation": "комната",
+        "sentence": "제 ______은 작지만 편해요.",
+        "original_sentence": "제 방은 작지만 편해요.",
+        "wrong_options": ["창문", "학교", "가게"]
+      },
+      {
+        "word": "교실",
+        "translation": "класс",
+        "sentence": "학생들이 ______에 있어요.",
+        "original_sentence": "학생들이 교실에 있어요.",
+        "wrong_options": ["식당", "운동장", "기차역"]
+      },
+      {
+        "word": "도시",
+        "translation": "город",
+        "sentence": "서울은 큰 ______예요.",
+        "original_sentence": "서울은 큰 도시예요.",
+        "wrong_options": ["나라", "산", "바다"]
+      },
+      {
+        "word": "바다",
+        "translation": "море",
+        "sentence": "여름에 ______에 가고 싶어요.",
+        "original_sentence": "여름에 바다에 가고 싶어요.",
+        "wrong_options": ["산", "강", "호수"]
+      },
+      {
+        "word": "산",
+        "translation": "гора",
+        "sentence": "주말에 ______에 올랐어요.",
+        "original_sentence": "주말에 산에 올랐어요.",
+        "wrong_options": ["바다", "공원", "학교"]
+      },
+      {
+        "word": "우유",
+        "translation": "молоко",
+        "sentence": "저는 아침마다 ______를 마셔요.",
+        "original_sentence": "저는 아침마다 우유를 마셔요.",
+        "wrong_options": ["커피", "물", "주스"]
+      },
+      {
+        "word": "밤",
+        "translation": "ночь",
+        "sentence": "어제 ______에 늦게 잤어요.",
+        "original_sentence": "어제 밤에 늦게 잤어요.",
+        "wrong_options": ["아침에", "점심에", "저녁에"]
+      },
+      {
+        "word": "아침",
+        "translation": "утро",
+        "sentence": "저는 일찍 ______에 일어나요.",
+        "original_sentence": "저는 일찍 아침에 일어나요.",
+        "wrong_options": ["밤에", "저녁에", "주말에"]
+      },
+      {
+        "word": "주말",
+        "translation": "выходные",
+        "sentence": "______에는 집에서 쉬어요.",
+        "original_sentence": "주말에는 집에서 쉬어요.",
+        "wrong_options": ["평일에는", "아침에는", "밤에는"]
+      },
+      {
+        "word": "한국어",
+        "translation": "корейский язык",
+        "sentence": "저는 ______를 배우고 있어요.",
+        "original_sentence": "저는 한국어를 배우고 있어요.",
+        "wrong_options": ["중국어", "영어", "일본어"]
+      },
+      {
+        "word": "이름",
+        "translation": "имя",
+        "sentence": "제 ______은 마리나예요.",
+        "original_sentence": "제 이름은 마리나예요.",
+        "wrong_options": ["나이", "가족", "주소"]
+      },
+      {
+        "word": "나이",
+        "translation": "возраст",
+        "sentence": "제 ______는 스무 살이에요.",
+        "original_sentence": "제 나이는 스무 살이에요.",
+        "wrong_options": ["이름", "학교", "직업"]
+      },
+      {
+        "word": "직업",
+        "translation": "профессия",
+        "sentence": "제 ______은 학생이에요.",
+        "original_sentence": "제 직업은 학생이에요.",
+        "wrong_options": ["가족", "이름", "취미"]
+      },
+      {
+        "word": "취미",
+        "translation": "хобби",
+        "sentence": "제 ______는 영화 보기예요.",
+        "original_sentence": "제 취미는 영화 보기예요.",
+        "wrong_options": ["직업", "이름", "주소"]
+      },
+      {
+        "word": "주소",
+        "translation": "адрес",
+        "sentence": "새 ______를 알려 주세요.",
+        "original_sentence": "새 주소를 알려 주세요.",
+        "wrong_options": ["번호", "나이", "직업"]
+      },
+      {
+        "word": "번호",
+        "translation": "номер",
+        "sentence": "전화 ______ 좀 알려 주세요.",
+        "original_sentence": "전화 번호 좀 알려 주세요.",
+        "wrong_options": ["주소", "이름", "직업"]
+      },
+      {
+        "word": "운동",
+        "translation": "спорт",
+        "sentence": "저는 매일 ______을 해요.",
+        "original_sentence": "저는 매일 운동을 해요.",
+        "wrong_options": ["숙제를", "요리를", "청소를"]
+      },
+      {
+        "word": "노래",
+        "translation": "песня",
+        "sentence": "좋아하는 ______가 있어요?",
+        "original_sentence": "좋아하는 노래가 있어요?",
+        "wrong_options": ["음식", "책", "영화"]
+      },
+      {
+        "word": "공부",
+        "translation": "учёба",
+        "sentence": "오늘은 집에서 ______를 했어요.",
+        "original_sentence": "오늘은 집에서 공부를 했어요.",
+        "wrong_options": ["요리를", "운동을", "청소를"]
+      },
+      {
+        "word": "요리",
+        "translation": "готовка",
+        "sentence": "주말에 ______를 배웠어요.",
+        "original_sentence": "주말에 요리를 배웠어요.",
+        "wrong_options": ["운동을", "춤을", "노래를"]
+      },
+      {
+        "word": "춤",
+        "translation": "танец",
+        "sentence": "저는 한국 ______을 배우고 있어요.",
+        "original_sentence": "저는 한국 춤을 배우고 있어요.",
+        "wrong_options": ["노래", "운동", "요리"]
+      },
+      {
+        "word": "가족",
+        "translation": "семья",
+        "sentence": "저는 큰 ______과 함께 살아요.",
+        "original_sentence": "저는 큰 가족과 함께 살아요.",
+        "wrong_options": ["회사", "학교", "동네"]
+      },
+      {
+        "word": "어머니",
+        "translation": "мать",
+        "sentence": "제 ______는 요리를 잘하세요.",
+        "original_sentence": "제 어머니는 요리를 잘하세요.",
+        "wrong_options": ["아버지", "형", "언니"]
+      },
+      {
+        "word": "아버지",
+        "translation": "отец",
+        "sentence": "제 ______는 회사에서 일하세요.",
+        "original_sentence": "제 아버지는 회사에서 일하세요.",
+        "wrong_options": ["어머니", "동생", "친구"]
+      },
+      {
+        "word": "형",
+        "translation": "старший брат (для мужчин)",
+        "sentence": "저는 ______이 한 명 있어요.",
+        "original_sentence": "저는 형이 한 명 있어요.",
+        "wrong_options": ["누나", "언니", "오빠"]
+      },
+      {
+        "word": "누나",
+        "translation": "старшая сестра (для мужчин)",
+        "sentence": "저는 ______가 없어요.",
+        "original_sentence": "저는 누나가 없어요.",
+        "wrong_options": ["형", "남동생", "여동생"]
+      },
+      {
+        "word": "오빠",
+        "translation": "старший брат (для женщин)",
+        "sentence": "언니와 ______가 있어요.",
+        "original_sentence": "언니와 오빠가 있어요.",
+        "wrong_options": ["아버지", "선생님", "친구"]
+      },
+      {
+        "word": "언니",
+        "translation": "старшая сестра (для женщин)",
+        "sentence": "저는 ______가 두 명 있어요.",
+        "original_sentence": "저는 언니가 두 명 있어요.",
+        "wrong_options": ["오빠", "누나", "동생"]
+      },
+      {
+        "word": "동생",
+        "translation": "младший брат/сестра",
+        "sentence": "제 ______은 학생이에요.",
+        "original_sentence": "제 동생은 학생이에요.",
+        "wrong_options": ["언니", "아버지", "친구"]
+      },
+      {
+        "word": "친절",
+        "translation": "доброта",
+        "sentence": "그 사람은 정말 ______해요.",
+        "original_sentence": "그 사람은 정말 친절해요.",
+        "wrong_options": ["화나요", "추워요", "어두워요"]
+      },
+      {
+        "word": "기분",
+        "translation": "настроение",
+        "sentence": "오늘 ______이 좋아요.",
+        "original_sentence": "오늘 기분이 좋아요.",
+        "wrong_options": ["날씨가", "시간이", "음식이"]
+      },
+      {
+        "word": "사람",
+        "translation": "человек",
+        "sentence": "여기 많은 ______들이 있어요.",
+        "original_sentence": "여기 많은 사람들이 있어요.",
+        "wrong_options": ["동물들", "책들", "집들"]
+      },
+      {
+        "word": "동물",
+        "translation": "животное",
+        "sentence": "저는 ______을 좋아해요.",
+        "original_sentence": "저는 동물을 좋아해요.",
+        "wrong_options": ["채소", "나라", "운동"]
+      },
+      {
+        "word": "음식",
+        "translation": "еда",
+        "sentence": "한국 ______을 좋아하세요?",
+        "original_sentence": "한국 음식을 좋아하세요?",
+        "wrong_options": ["옷을", "영화를", "노래를"]
+      },
+      {
+        "word": "고기",
+        "translation": "мясо",
+        "sentence": "저는 ______를 잘 안 먹어요.",
+        "original_sentence": "저는 고기를 잘 안 먹어요.",
+        "wrong_options": ["생선", "라면", "빵"]
+      },
+      {
+        "word": "생선",
+        "translation": "рыба",
+        "sentence": "저는 ______ 요리를 좋아해요.",
+        "original_sentence": "저는 생선 요리를 좋아해요.",
+        "wrong_options": ["고기", "과일", "야채"]
+      },
+      {
+        "word": "과일",
+        "translation": "фрукты",
+        "sentence": "여름에는 ______이 맛있어요.",
+        "original_sentence": "여름에는 과일이 맛있어요.",
+        "wrong_options": ["고기", "커피", "빵"]
+      },
+      {
+        "word": "야채",
+        "translation": "овощи",
+        "sentence": "매일 ______를 먹는 게 좋아요.",
+        "original_sentence": "매일 야채를 먹는 게 좋아요.",
+        "wrong_options": ["과자", "라면", "고기"]
+      },
+      {
+        "word": "라면",
+        "translation": "рамён",
+        "sentence": "저는 밤에 ______을 자주 먹어요.",
+        "original_sentence": "저는 밤에 라면을 자주 먹어요.",
+        "wrong_options": ["빵", "과일", "고기"]
+      },
+      {
+        "word": "케이크",
+        "translation": "торт",
+        "sentence": "생일에 ______를 먹었어요.",
+        "original_sentence": "생일에 케이크를 먹었어요.",
+        "wrong_options": ["라면", "밥", "고기"]
+      },
+      {
+        "word": "밥",
+        "translation": "рис/еда",
+        "sentence": "한국 사람들은 매일 ______을 먹어요.",
+        "original_sentence": "한국 사람들은 매일 밥을 먹어요.",
+        "wrong_options": ["빵", "고기", "케이크"]
+      },
+      {
+        "word": "노트북",
+        "translation": "ноутбук",
+        "sentence": "저는 ______으로 공부해요.",
+        "original_sentence": "저는 노트북으로 공부해요.",
+        "wrong_options": ["핸드폰으로", "책으로", "공책으로"]
+      },
+      {
+        "word": "핸드폰",
+        "translation": "телефон",
+        "sentence": "제 ______은 아주 오래됐어요.",
+        "original_sentence": "제 핸드폰은 아주 오래됐어요.",
+        "wrong_options": ["가방은", "책상은", "의자는"]
+      },
+      {
+        "word": "텔레비전",
+        "translation": "телевизор",
+        "sentence": "저는 밤에 ______을 봐요.",
+        "original_sentence": "저는 밤에 텔레비전을 봐요.",
+        "wrong_options": ["창문을", "문을", "책상을"]
+      },
+      {
+        "word": "침대",
+        "translation": "кровать",
+        "sentence": "저는 ______에서 푹 잤어요.",
+        "original_sentence": "저는 침대에서 푹 잤어요.",
+        "wrong_options": ["책상에서", "의자에서", "바닥에서"]
+      },
+      {
+        "word": "책상",
+        "translation": "письменный стол",
+        "sentence": "제 ______은 방에 있어요.",
+        "original_sentence": "제 책상은 방에 있어요.",
+        "wrong_options": ["침대는", "가방은", "창문은"]
+      },
+      {
+        "word": "냉장고",
+        "translation": "холодильник",
+        "sentence": "____에 음식이 많아요.",
+        "original_sentence": "냉장고에 음식이 많아요.",
+        "wrong_options": ["책상에", "침대에", "가방에"]
+      },
+      {
+        "word": "화장실",
+        "translation": "туалет",
+        "sentence": "______이 어디에 있어요?",
+        "original_sentence": "화장실이 어디에 있어요?",
+        "wrong_options": ["식당이", "방이", "창문이"]
+      },
+      {
+        "word": "약국",
+        "translation": "аптека",
+        "sentence": "아픈 날에는 ______에 가야 해요.",
+        "original_sentence": "아픈 날에는 약국에 가야 해요.",
+        "wrong_options": ["은행에", "가게에", "식당에"]
+      },
+      {
+        "word": "병원",
+        "translation": "больница",
+        "sentence": "감기에 걸려서 ______에 갔어요.",
+        "original_sentence": "감기에 걸려서 병원에 갔어요.",
+        "wrong_options": ["학교에", "회사에", "공원에"]
+      },
+      {
+        "word": "은행",
+        "translation": "банк",
+        "sentence": "돈을 찾으려고 ______에 갔어요.",
+        "original_sentence": "돈을 찾으려고 은행에 갔어요.",
+        "wrong_options": ["도서관에", "가게에", "집에"]
+      },
+      {
+        "word": "도서관",
+        "translation": "библиотека",
+        "sentence": "저는 ______에서 공부해요.",
+        "original_sentence": "저는 도서관에서 공부해요.",
+        "wrong_options": ["가게에서", "식당에서", "병원에서"]
+      },
+      {
+        "word": "우체국",
+        "translation": "почта",
+        "sentence": "소포를 보내려고 ______에 갔어요.",
+        "original_sentence": "소포를 보내려고 우체국에 갔어요.",
+        "wrong_options": ["학교에", "은행에", "공원에"]
+      },
+      {
+        "word": "지하철",
+        "translation": "метро",
+        "sentence": "저는 ______을 타고 학교에 가요.",
+        "original_sentence": "저는 지하철을 타고 학교에 가요.",
+        "wrong_options": ["택시를", "비행기를", "배를"]
+      },
+      {
+        "word": "택시",
+        "translation": "такси",
+        "sentence": "늦어서 ______를 탔어요.",
+        "original_sentence": "늦어서 택시를 탔어요.",
+        "wrong_options": ["지하철을", "버스를", "기차를"]
+      },
+      {
+        "word": "기차",
+        "translation": "поезд",
+        "sentence": "주말에 ______를 타고 여행했어요.",
+        "original_sentence": "주말에 기차를 타고 여행했어요.",
+        "wrong_options": ["버스를", "택시를", "배를"]
+      },
+      {
+        "word": "비행기",
+        "translation": "самолёт",
+        "sentence": "한국에 ______로 갔어요.",
+        "original_sentence": "한국에 비행기로 갔어요.",
+        "wrong_options": ["기차로", "버스로", "택시로"]
+      },
+      {
+        "word": "배",
+        "translation": "корабль",
+        "sentence": "섬에 갈 때 ______를 타요.",
+        "original_sentence": "섬에 갈 때 배를 타요.",
+        "wrong_options": ["기차를", "버스를", "택시를"]
+      },
+      {
+        "word": "운전",
+        "translation": "вождение",
+        "sentence": "저는 ______을 잘 못해요.",
+        "original_sentence": "저는 운전을 잘 못해요.",
+        "wrong_options": ["운동을", "요리를", "청소를"]
+      },
+      {
+        "word": "청소",
+        "translation": "уборка",
+        "sentence": "오늘 방 ______를 했어요.",
+        "original_sentence": "오늘 방 청소를 했어요.",
+        "wrong_options": ["운동을", "요리를", "공부를"]
+      },
+      {
+        "word": "약",
+        "translation": "лекарство",
+        "sentence": "머리가 아파서 ______을 먹었어요.",
+        "original_sentence": "머리가 아파서 약을 먹었어요.",
+        "wrong_options": ["과자를", "물을", "우유를"]
+      },
+      {
+        "word": "신분증",
+        "translation": "удостоверение личности",
+        "sentence": "______을 가져오세요.",
+        "original_sentence": "신분증을 가져오세요.",
+        "wrong_options": ["전화기를", "가방을", "책을"]
+      },
+      {
+        "word": "비밀번호",
+        "translation": "пароль",
+        "sentence": "새 ______를 설정했어요.",
+        "original_sentence": "새 비밀번호를 설정했어요.",
+        "wrong_options": ["이름을", "주소를", "취미를"]
+      },
+      {
+        "word": "게임",
+        "translation": "игра",
+        "sentence": "저는 친구와 ______을 했어요.",
+        "original_sentence": "저는 친구와 게임을 했어요.",
+        "wrong_options": ["운동을", "공부를", "요리를"]
+      },
+      {
+        "word": "선물",
+        "translation": "подарок",
+        "sentence": "친구에게 ______을 줬어요.",
+        "original_sentence": "친구에게 선물을 줬어요.",
+        "wrong_options": ["빵을", "책을", "과자를"]
+      },
+      {
+        "word": "약속",
+        "translation": "встреча/обещание",
+        "sentence": "오늘 저녁에 ______이 있어요.",
+        "original_sentence": "오늘 저녁에 약속이 있어요.",
+        "wrong_options": ["숙제가", "문제가", "전화가"]
+      },
+      {
+        "word": "모임",
+        "translation": "собрание",
+        "sentence": "주말에 친구들과 ______이 있어요.",
+        "original_sentence": "주말에 친구들과 모임이 있어요.",
+        "wrong_options": ["숙제가", "옷이", "번호가"]
+      },
+      {
+        "word": "축구",
+        "translation": "футбол",
+        "sentence": "주말에 친구들과 ______를 했어요.",
+        "original_sentence": "주말에 친구들과 축구를 했어요.",
+        "wrong_options": ["농구", "배구", "수영"]
+      },
+      {
+        "word": "수영",
+        "translation": "плавание",
+        "sentence": "여름에는 ______을 자주 해요.",
+        "original_sentence": "여름에는 수영을 자주 해요.",
+        "wrong_options": ["스키", "축구", "달리기"]
+      },
+      {
+        "word": "달리기",
+        "translation": "бег",
+        "sentence": "아침에 공원에서 ______를 했어요.",
+        "original_sentence": "아침에 공원에서 달리기를 했어요.",
+        "wrong_options": ["수영을", "춤을", "노래를"]
+      },
+      {
+        "word": "사진관",
+        "translation": "фотостудия",
+        "sentence": "가족 사진을 찍으려고 ______에 갔어요.",
+        "original_sentence": "가족 사진을 찍으려고 사진관에 갔어요.",
+        "wrong_options": ["도서관에", "학교에", "시장에"]
+      },
+      {
+        "word": "꽃",
+        "translation": "цветок",
+        "sentence": "정원에 예쁜 ______이 피었어요.",
+        "original_sentence": "정원에 예쁜 꽃이 피었어요.",
+        "wrong_options": ["나무가", "돌이", "구름이"]
+      },
+      {
+        "word": "나무",
+        "translation": "дерево",
+        "sentence": "공원에 큰 ______가 많이 있어요.",
+        "original_sentence": "공원에 큰 나무가 많이 있어요.",
+        "wrong_options": ["책이", "집이", "강아지가"]
+      },
+      {
+        "word": "하늘",
+        "translation": "небо",
+        "sentence": "오늘 ______이 아주 맑아요.",
+        "original_sentence": "오늘 하늘이 아주 맑아요.",
+        "wrong_options": ["바다가", "산이", "땅이"]
+      },
+      {
+        "word": "구름",
+        "translation": "облако",
+        "sentence": "하늘에 흰 ______이 떠 있어요.",
+        "original_sentence": "하늘에 흰 구름이 떠 있어요.",
+        "wrong_options": ["연기가", "비가", "별이"]
+      },
+      {
+        "word": "별",
+        "translation": "звезда",
+        "sentence": "밤하늘에 ______이 많아요.",
+        "original_sentence": "밤하늘에 별이 많아요.",
+        "wrong_options": ["구름이", "바람이", "꽃이"]
+      },
+      {
+        "word": "바람",
+        "translation": "ветер",
+        "sentence": "오늘 ______이 많이 불어요.",
+        "original_sentence": "오늘 바람이 많이 불어요.",
+        "wrong_options": ["비가", "눈이", "구름이"]
+      },
+      {
+        "word": "비",
+        "translation": "дождь",
+        "sentence": "어제 ______가 많이 왔어요.",
+        "original_sentence": "어제 비가 많이 왔어요.",
+        "wrong_options": ["눈이", "바람이", "구름이"]
+      },
+      {
+        "word": "눈",
+        "translation": "снег",
+        "sentence": "겨울에 ______이 내려요.",
+        "original_sentence": "겨울에 눈이 내려요.",
+        "wrong_options": ["비가", "바람이", "연기가"]
+      },
+      {
+        "word": "계절",
+        "translation": "время года",
+        "sentence": "한국에는 네 ______이 있어요.",
+        "original_sentence": "한국에는 네 계절이 있어요.",
+        "wrong_options": ["나라", "도시", "가족"]
+      },
+      {
+        "word": "봄",
+        "translation": "весна",
+        "sentence": "______에는 꽃이 피어요.",
+        "original_sentence": "봄에는 꽃이 피어요.",
+        "wrong_options": ["겨울에는", "여름에는", "가을에는"]
+      },
+      {
+        "word": "여름",
+        "translation": "лето",
+        "sentence": "______에는 날씨가 아주 더워요.",
+        "original_sentence": "여름에는 날씨가 아주 더워요.",
+        "wrong_options": ["겨울에는", "봄에는", "가을에는"]
+      },
+      {
+        "word": "가을",
+        "translation": "осень",
+        "sentence": "______에는 단풍이 아름다워요.",
+        "original_sentence": "가을에는 단풍이 아름다워요.",
+        "wrong_options": ["여름에는", "春에는", "날씨는"]
+      },
+      {
+        "word": "겨울",
+        "translation": "зима",
+        "sentence": "______에는 눈이 와요.",
+        "original_sentence": "겨울에는 눈이 와요.",
+        "wrong_options": ["여름에는", "봄에는", "가을에는"]
+      },
+      {
+        "word": "요일",
+        "translation": "день недели",
+        "sentence": "오늘은 무슨 ______이에요?",
+        "original_sentence": "오늘은 무슨 요일이에요?",
+        "wrong_options": ["시간이에요", "날씨예요", "주소예요"]
+      },
+      {
+        "word": "월요일",
+        "translation": "понедельник",
+        "sentence": "______에는 보통 피곤해요.",
+        "original_sentence": "월요일에는 보통 피곤해요.",
+        "wrong_options": ["토요일에는", "일요일에는", "금요일에는"]
+      },
+      {
+        "word": "일요일",
+        "translation": "воскресенье",
+        "sentence": "______에는 보통 쉬어요.",
+        "original_sentence": "일요일에는 보통 쉬어요.",
+        "wrong_options": ["수요일에는", "월요일에는", "금요일에는"]
+      },
+      {
+        "word": "시작",
+        "translation": "начало",
+        "sentence": "수업 ______ 시간이 언제예요?",
+        "original_sentence": "수업 시작 시간이 언제예요?",
+        "wrong_options": ["끝", "공부", "약속"]
+      },
+      {
+        "word": "끝",
+        "translation": "конец",
+        "sentence": "영화 ______이 감동적이었어요.",
+        "original_sentence": "영화 끝이 감동적이었어요.",
+        "wrong_options": ["시작이", "내용이", "가격이"]
+      },
+      {
+        "word": "가격",
+        "translation": "цена",
+        "sentence": "이 옷 ______이 얼마예요?",
+        "original_sentence": "이 옷 가격이 얼마예요?",
+        "wrong_options": ["색깔이", "길이가", "크기가"]
+      },
+      {
+        "word": "색깔",
+        "translation": "цвет",
+        "sentence": "어떤 ______을 좋아하세요?",
+        "original_sentence": "어떤 색깔을 좋아하세요?",
+        "wrong_options": ["가격을", "번호를", "시간을"]
+      },
+      {
+        "word": "빨강",
+        "translation": "красный",
+        "sentence": "저는 ______색을 좋아해요.",
+        "original_sentence": "저는 빨강색을 좋아해요.",
+        "wrong_options": ["파랑색", "노랑색", "하얀색"]
+      },
+      {
+        "word": "파랑",
+        "translation": "синий",
+        "sentence": "______색 바지를 샀어요.",
+        "original_sentence": "파랑색 바지를 샀어요.",
+        "wrong_options": ["빨강색", "초록색", "검정색"]
+      },
+      {
+        "word": "초록",
+        "translation": "зелёный",
+        "sentence": "______색 나무가 많아요.",
+        "original_sentence": "초록색 나무가 많아요.",
+        "wrong_options": ["파랑색", "회색", "검정색"]
+      },
+      {
+        "word": "검정",
+        "translation": "чёрный",
+        "sentence": "저는 ______색 신발을 신어요.",
+        "original_sentence": "저는 검정색 신발을 신어요.",
+        "wrong_options": ["흰색", "파랑색", "노랑색"]
+      },
+      {
+        "word": "하얀색",
+        "translation": "белый",
+        "sentence": "눈은 ______이에요.",
+        "original_sentence": "눈은 하얀색이에요.",
+        "wrong_options": ["검정색", "파랑색", "초록색"]
+      },
+      {
+        "word": "문제",
+        "translation": "проблема/вопрос",
+        "sentence": "이 ______를 풀 수 있어요?",
+        "original_sentence": "이 문제를 풀 수 있어요?",
+        "wrong_options": ["가방을", "옷을", "시간을"]
+      },
+      {
+        "word": "답",
+        "translation": "ответ",
+        "sentence": "이 ______이 맞아요.",
+        "original_sentence": "이 답이 맞아요.",
+        "wrong_options": ["문제가", "책이", "옷이"]
+      },
+      {
+        "word": "시험",
+        "translation": "экзамен",
+        "sentence": "내일 ______이 있어요.",
+        "original_sentence": "내일 시험이 있어요.",
+        "wrong_options": ["가방이", "전화가", "선물이"]
+      },
+      {
+        "word": "연습",
+        "translation": "упражнение/практика",
+        "sentence": "매일 한국어 ______을 해요.",
+        "original_sentence": "매일 한국어 연습을 해요.",
+        "wrong_options": ["운동을", "춤을", "요리를"]
+      },
+      {
+        "word": "휴가",
+        "translation": "отпуск",
+        "sentence": "여름 ______ 때 여행 가고 싶어요.",
+        "original_sentence": "여름 휴가 때 여행 가고 싶어요.",
+        "wrong_options": ["약속 때", "수업 때", "공부 때"]
+      },
+      {
+        "word": "생일",
+        "translation": "день рождения",
+        "sentence": "오늘 제 ______이에요.",
+        "original_sentence": "오늘 제 생일이에요.",
+        "wrong_options": ["이름이에요", "주소예요", "직업이에요"]
+      },
+      {
+        "word": "파티",
+        "translation": "вечеринка",
+        "sentence": "생일 ______에 친구들을 초대했어요.",
+        "original_sentence": "생일 파티에 친구들을 초대했어요.",
+        "wrong_options": ["가게에", "학교에", "회사에"]
+      },
+      {
+        "word": "초대",
+        "translation": "приглашение",
+        "sentence": "친구에게 ______를 받았어요.",
+        "original_sentence": "친구에게 초대를 받았어요.",
+        "wrong_options": ["선물을", "문제를", "주소를"]
+      },
+      {
+        "word": "도움",
+        "translation": "помощь",
+        "sentence": "조금 ______이 필요해요.",
+        "original_sentence": "조금 도움이 필요해요.",
+        "wrong_options": ["휴식이", "전화가", "날씨가"]
+      },
+      {
+        "word": "휴식",
+        "translation": "отдых",
+        "sentence": "오늘은 ______이 필요해요.",
+        "original_sentence": "오늘은 휴식이 필요해요.",
+        "wrong_options": ["공부가", "요리가", "문제가"]
+      },
+      {
+        "word": "운동장",
+        "translation": "спортивная площадка",
+        "sentence": "학생들이 ______에서 뛰어요.",
+        "original_sentence": "학생들이 운동장에서 뛰어요.",
+        "wrong_options": ["도서관에서", "식당에서", "회사에서"]
+      },
+      {
+        "word": "교장",
+        "translation": "директор школы",
+        "sentence": "우리 학교 ______ 선생님이에요.",
+        "original_sentence": "우리 학교 교장 선생님이에요.",
+        "wrong_options": ["학생", "친구", "가족"]
+      },
+      {
+        "word": "손님",
+        "translation": "гость/клиент",
+        "sentence": "가게에 ______이 많아요.",
+        "original_sentence": "가게에 손님이 많아요.",
+        "wrong_options": ["가족이", "친구가", "학생이"]
+      },
+      {
+        "word": "회사원",
+        "translation": "офисный работник",
+        "sentence": "저는 ______으로 일해요.",
+        "original_sentence": "저는 회사원으로 일해요.",
+        "wrong_options": ["선생님으로", "학생으로", "요리사로"]
+      },
+      {
+        "word": "요리사",
+        "translation": "повар",
+        "sentence": "제 친구는 ______예요.",
+        "original_sentence": "제 친구는 요리사예요.",
+        "wrong_options": ["회사원", "학생", "가수"]
+      },
+      {
+        "word": "가수",
+        "translation": "певец",
+        "sentence": "그 사람은 유명한 ______예요.",
+        "original_sentence": "그 사람은 유명한 가수예요.",
+        "wrong_options": ["배우", "의사", "요리사"]
+      },
+      {
+        "word": "배우",
+        "translation": "актёр",
+        "sentence": "저는 한국 ______를 좋아해요.",
+        "original_sentence": "저는 한국 배우를 좋아해요.",
+        "wrong_options": ["가수", "의사", "선생님"]
+      },
+      {
+        "word": "의사",
+        "translation": "врач",
+        "sentence": "아프면 ______에게 가야 해요.",
+        "original_sentence": "아프면 의사에게 가야 해요.",
+        "wrong_options": ["선생님에게", "친구에게", "회사원에게"]
+      },
+      {
+        "word": "선생님",
+        "translation": "учитель",
+        "sentence": "우리 ______은 친절하세요.",
+        "original_sentence": "우리 선생님은 친절하세요.",
+        "wrong_options": ["가수는", "학생은", "환자는"]
+      }
+    ]
+  }
+  
