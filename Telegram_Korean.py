@@ -446,8 +446,8 @@ async def main():
     # Планируем отправку слова дня в 9:00
     schedule_daily_word(scheduler=scheduler, hour=9, minute=0)
     
-    # Планируем отправку квиза в 19:00
-    schedule_daily_quiz(scheduler=scheduler, test_mode=False, hour=19, minute=0)
+    # Планируем отправку квиза в 19:00 (значение по умолчанию)
+    schedule_daily_quiz(scheduler=scheduler, test_mode=False)
     
     # Запускаем планировщик
     scheduler.start()

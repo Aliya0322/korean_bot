@@ -202,7 +202,7 @@ def schedule_daily_word(scheduler=None, hour=9, minute=0):
     print(f"📅 Отправка слова дня в {hour:02d}:{minute:02d} каждый день")
     return scheduler
 
-def schedule_daily_quiz(scheduler=None, test_mode=False, hour=9, minute=0):
+def schedule_daily_quiz(scheduler=None, test_mode=False, hour=19, minute=0):
     if scheduler is None:
         scheduler = AsyncIOScheduler()
     if test_mode:
