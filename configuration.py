@@ -12,5 +12,9 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 MAX_REQUESTS_PER_DAY = int(os.getenv("MAX_REQUESTS_PER_DAY", "10"))
 ADMIN_ID = int(os.getenv("ADMIN_ID"))
 
+# Стили для генерации контента
+TEXT_STYLE = "Дружелюбный и информативный тон"
+IMAGE_STYLE = "Реалистичные изображения, безопасный контент"
+
 # Другие настройки
 user_requests = {}
